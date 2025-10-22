@@ -27,6 +27,74 @@ To create two specific classes — `Beans` and `Mango`. Then, create a **generic
 
 ## 💻 Program
 
+class Beans:
+
+    def type(self):
+    
+        print("Type: Vegetable")
+
+    def color(self):
+    
+        print("Color: Green")
+
+class Mango:
+
+    def type(self):
+    
+        print("Type: Fruit")
+
+    def color(self):
+    
+        print("Color: Yellow")
+
+# 3. Define Generic Function func(obj)
+
+def func(obj):
+   
+    print(f"\nCalling methods for {obj.__class__.__name__} object:")
+    
+    obj.type()  
+    
+    obj.color() 
+
+if __name__ == "__main__":
+   
+    print("--- Creating Objects ---")
+    
+    obj_beans = Beans()
+    
+    obj_mango = Mango()
+
+    func(obj_beans)
+    
+    print("The 'func' function worked with both objects,")
+    
+    print("even though they are different types.")
+    
+    print("This is polymorphism (duck typing).")
+
+
+
 ## Output
 
+--- Creating Objects ---
+
+Calling methods for Beans object:
+
+Type: Vegetable
+
+Color: Green
+
+Calling methods for Mango object:
+
+Type: Fruit
+
+Color: Yellow
+
 ## Result
+
+The 'func' function worked with both objects,
+
+even though they are different types.
+
+This is polymorphism (duck typing).
