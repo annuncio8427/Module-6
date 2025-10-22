@@ -24,6 +24,44 @@ To implement **Encapsulation** in Python by defining a class `Rectangle` with **
 
 ## 💻 Program
 
+class Rectangle:
+    
+    def __init__(self, length=10, breadth=5):
+        
+        self.__length = length
+        
+        self.__breadth = breadth
+        
+        print("--- Inside the __init__ method ---")
+        
+        print(f"Accessing private __length: {self.__length}")
+        
+        print(f"Accessing private __breadth: {self.__breadth}")
+
+if __name__ == "__main__":
+    
+    rect = Rectangle(20, 10)
+    
+    try:
+    
+        print(f"Accessing rect.__length: {rect.__length}")
+        
+    except AttributeError as e:
+    
+        print(f"Caught expected error: {e}")
+
+
+
 ## Output
 
+Accessing private __length: 20
+
+Accessing private __breadth: 10
+
 ## Result
+
+Accessing private __length: 20
+
+Accessing private __breadth: 10
+
+Caught expected error: 'Rectangle' object has no attribute '__length'
