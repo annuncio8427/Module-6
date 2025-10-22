@@ -15,6 +15,38 @@ To write a Python program that demonstrates class inheritance by creating a pare
 
 ## 💻 PROGRAM:
 
+class Fish:
+    
+    def type(self):
+    
+        print("fish")
+
+class Shark(Fish):
+    
+    def type(self):
+    
+        print("shark")
+
+if __name__ == "__main__":
+
+    obj_goldfish = Fish()
+    
+    obj_hammerhead = Shark()
+    
+    for obj in (obj_goldfish, obj_hammerhead):
+    
+        obj.type()
+    print("The loop called the correct 'type()' method for each object,")
+    
+    print("demonstrating polymorphism and method overriding.")
+
+
 ## OUTPUT
 
+fish
+
+shark
+
 ## RESULT
+
+The loop called the correct 'type()' method for each object, demonstrating polymorphism and method overriding.
