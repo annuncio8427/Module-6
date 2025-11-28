@@ -1,10 +1,9 @@
-# 🐟 Method Overriding-Fish and Shark Class Inheritance in Python
+# 🐟 Method Overriding - Fish and Shark Class Inheritance in Python
 
 ## 🧠 AIM:
-To write a Python program that demonstrates class inheritance by creating a parent class `Fish` with a method `type`, and a child class `Shark` that overrides the `type` method.
+To write a Python program that demonstrates class inheritance by creating a parent class `Fish` with a method `type()`, and a child class `Shark` that overrides the `type()` method.
 
 ## 📋 ALGORITHM:
-
 1. Define the `Fish` class with a method named `type()` that prints `"fish"`.
 2. Define the `Shark` class as a subclass of `Fish`, and override the `type()` method to print `"shark"`.
 3. Create an instance of the `Fish` class named `obj_goldfish`.
@@ -15,38 +14,35 @@ To write a Python program that demonstrates class inheritance by creating a pare
 
 ## 💻 PROGRAM:
 
+```python
 class Fish:
-    
     def type(self):
-    
         print("fish")
 
+
 class Shark(Fish):
-    
     def type(self):
-    
         print("shark")
 
-if __name__ == "__main__":
 
+if __name__ == "__main__":
     obj_goldfish = Fish()
-    
     obj_hammerhead = Shark()
     
     for obj in (obj_goldfish, obj_hammerhead):
-    
         obj.type()
-    print("The loop called the correct 'type()' method for each object,")
     
+    print("The loop called the correct 'type()' method for each object,")
     print("demonstrating polymorphism and method overriding.")
+```
 
-
-## OUTPUT
-
+## 📤 OUTPUT:
+```
 fish
-
 shark
+The loop called the correct 'type()' method for each object,
+demonstrating polymorphism and method overriding.
+```
 
-## RESULT
-
-The loop called the correct 'type()' method for each object, demonstrating polymorphism and method overriding.
+## ✅ RESULT:
+The loop called the correct `type()` method for each object, demonstrating polymorphism and method overriding.
