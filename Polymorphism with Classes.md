@@ -26,7 +26,7 @@ To create two specific classes — `Beans` and `Mango`. Then, create a **generic
 ---
 
 ## 💻 Program
-
+```python
 class Beans:
 
     def type(self):
@@ -47,7 +47,6 @@ class Mango:
     
         print("Color: Yellow")
 
-# 3. Define Generic Function func(obj)
 
 def func(obj):
    
@@ -73,9 +72,10 @@ if __name__ == "__main__":
     
     print("This is polymorphism (duck typing).")
 
-
+```
 
 ## Output
+```python
 
 --- Creating Objects ---
 
@@ -90,7 +90,7 @@ Calling methods for Mango object:
 Type: Fruit
 
 Color: Yellow
-
+```
 ## Result
 
 The 'func' function worked with both objects,
