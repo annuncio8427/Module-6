@@ -23,6 +23,7 @@ To implement **Encapsulation** in Python by defining a class `Rectangle` with **
 ---
 
 ## 💻 Program
+```python
 
 class Rectangle:
     
@@ -49,6 +50,7 @@ if __name__ == "__main__":
     except AttributeError as e:
     
         print(f"Caught expected error: {e}")
+```
 
 
 
