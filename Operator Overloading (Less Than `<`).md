@@ -76,6 +76,8 @@ if __name__ == "__main__":
 
 
 ## Output
+
+```python
 --- Creating Objects ---
 
 Object created with value a = 20
@@ -95,7 +97,7 @@ Object created with value a = 50
 Object created with value a = 40
 
 Comparing 50 < 40
-
+```
 Result of (ob3 < ob4): ob2 is less than or equal to ob1
 
 ## Result
