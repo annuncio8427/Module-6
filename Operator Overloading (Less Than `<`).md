@@ -25,6 +25,7 @@ To write a Python program that demonstrates **operator overloading** by overload
 ---
 
 ## 💻 Program
+```python
 
 class A:
 
@@ -71,6 +72,7 @@ if __name__ == "__main__":
     print("The '<' operator was successfully overloaded,")
     
     print("calling the custom __lt__ method.")
+```
 
 
 ## Output
